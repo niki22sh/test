@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    int price;
+    string productName;
+    cout<<"Введіть назву продукту:";
+    getline(cin,productName);
+    cout<<"Введіть ціну";
+    cin>>price;
+    cout<<"Додано продукт "<<productName<<" за ціною "<<price<<"грн"<<endl;
+    return 0;
+}
+с#
+using System;
+class Program {
+    static void Main() {
+        int price;
+        string productName;
+
+        Console.Write("enter product name: ");
+        productName = Console.ReadLine();
+
+        Console.Write("enter price: ");
+        price = int.Parse(Console.ReadLine());
+        Console.WriteLine("Product added: " + productName + " by price " + price + "UAH");
+    }
+}
+java
+import java.util.Scanner;
+
+public class ShopProgram {
+    public static void main(String[] args) {
+        int price;
+        String productName;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("enter product name: ");
+        productName = scanner.nextLine();
+
+        System.out.print("enter price: ");
+        price = scanner.nextInt();
+
+        System.out.println("Product added: " + productName + " by price " + price + " UAH");
+    }
+}
+
+
+
+
+
+
+
